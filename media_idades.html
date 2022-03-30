@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<script>
+var totalPessoas = parseInt(prompt("Digite o total de pessoas."));
+var count = 1
+var totalIdade = 0
+var ordem = 1
+while(count <= totalPessoas){
+    var idade = parseInt(prompt("Digite a idade do " + ordem + "º pessoa."))
+    totalIdade = totalIdade + idade
+    count++
+    ordem++
+}
+var media = totalIdade/totalPessoas
+document.write("A média das idades é: " + Math.round(media) + ".")
+</script>
